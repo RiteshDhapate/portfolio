@@ -1,0 +1,199 @@
+.contact {
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .contact .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .contact .textContainer h1 {
+    font-size: 100px;
+    line-height: 88px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+  }
+  .contact .textContainer span,.contact .textContainer span a {
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .contact .formContainer {
+    flex: 1;
+    position: relative;
+  }
+  
+  .contact .formContainer .phoneSvg {
+    stroke: orange;
+    position: absolute;
+    margin: auto;
+    z-index: -1;
+    width: 450px;
+    height: 450px;
+  }
+  
+  .contact .formContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact .formContainer form textarea {
+      padding: 10px;
+  }
+  .contact .formContainer form input,
+  textarea {
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .contact .formContainer button {
+    padding: 20px;
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .contact .formContainer button:hover {
+    border-radius: 20px;
+  }
+
+  @media only screen and (max-width: 767px) and (min-width: 0px) {
+    .contact {
+      width: 100%;
+      padding: 10px;
+      flex-direction: column;
+    }
+    .contact .textContainer {
+      gap: 20px;
+      text-align: center;
+      align-items: center;
+      margin-top: 70px;
+    }
+    .contact .textContainer h1 {
+      font-size: 36px;
+    }
+    .contact .formContainer {
+      padding: 50px;
+      width: 100%;
+    }
+    .contact .formContainer form input,
+    textarea {
+      padding: 10px;
+    }
+    .contact .formContainer button {
+      padding: 10px;
+    }
+    .contact .formContainer .phoneSvg {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+
+
+
+
+
+
+
+ /* .social-links  .wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+} */
+
+.social-links .wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  color: black;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social-links .wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social-links .wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social-links .wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.social-links .wrapper .icon:hover span,
+.social-links .wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.social-links .wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.social-links .wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.social-links .wrapper .twitter:hover,
+.social-links .wrapper .twitter:hover .tooltip,
+.social-links .wrapper .twitte.social-links r:hover .tooltip::before {
+  background:black;
+  color: #fff;
+}
+
+.social-links .wrapper .instagram:hover,
+.social-links .wrapper .instagram:hover .tooltip,
+.social-links .wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+  
