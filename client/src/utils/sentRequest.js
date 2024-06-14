@@ -1,27 +1,5 @@
-const url = "http://localhost:2000";
+const url = "https://portfolio-iota-three-36.vercel.app";
 
-export async function fetchData(setLoding, setData, setError) {
-  const data = {
-    secret: "ritesh sent data",
-  };
-  const requestOptions = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  };
-  try {
-    setLoding(true);
-    const responce = await fetch(url, requestOptions);
-    const result = await responce.json();
-    setData(result);
-    setLoding(false);
-  } catch (error) {
-    setError(true);
-    console.error(error);
-  }
-}
 
 export async function sendEmail(
   name,
