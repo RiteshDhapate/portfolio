@@ -216,8 +216,8 @@ export const data = {
       ],
       image:
         "https://codeastro.com/wp-content/uploads/2021/06/Code-Astro-Thumbnail-Realtime-Chat-Application-PHP.jpg",
-      source_code_link: "https://github.com/",
-      live_link: "https://github.com/riteshdhapate",
+      source_code_link: "https://github.com/RiteshDhapate/chat-project-frontend",
+      live_link: "https://swifttalk.ritesh.live",
     },
     {
       name: "vercel clone - deploy projects ",
