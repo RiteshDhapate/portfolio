@@ -1,4 +1,4 @@
-const url = "https://portfolio-iota-three-36.vercel.app";
+const url = "https://portfolio-backend.ritesh.live";
 
 
 export async function sendEmail(
