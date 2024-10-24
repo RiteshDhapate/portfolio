@@ -233,8 +233,8 @@ export const data = {
       ],
       image:
         "https://storage.googleapis.com/bigcommerce-production-dev-center/images/catalyst/deployment-vercel-environment-variables.jpg",
-      source_code_link: "https://github.com/",
-      live_link: "https://github.com/riteshdhapate",
+      source_code_link: "https://github.com/RiteshDhapate/vercel-clone-frontend.git",
+      live_link: "https://swiftdeploy.ritesh.live",
     },
   ],
 };
